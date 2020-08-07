@@ -96,7 +96,7 @@
 
                 <fieldset id="schedule-items" >
                     <legend>Horários disponíveis
-                        <button>+ Novo Horário</button>
+                        <button type="button" id="add-item" >+ Novo Horário</button>
                     </legend>
 
                     <div class="schedule-item">
@@ -105,7 +105,7 @@
                             
                             <!--Esse [] significa pro meu back-end que ele pode receber mais de um dado aqui, que ele pode agrupar tudo isso-->
                             <select name="weekday[]" required>
-                                <option value="" disabled="" hidden="">Selecione uma opção</option>
+                                <option value="" >Selecione uma opção</option>
                                 <option value="0">Domingo</option>
                                 <option value="1">Segunda-feira</option>
                                 <option value="2">Terça-feira</option>
@@ -147,4 +147,7 @@
     </div>
     
 </body>
+
+    <script src="scripts/main.js"></script>
+
 </html>
